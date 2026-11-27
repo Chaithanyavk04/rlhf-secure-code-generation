@@ -1,0 +1,10 @@
+numpy==1.26.4
+scipy==1.13.1
+transformers==4.46.3
+peft==0.13.2
+trl==0.11.4
+bitsandbytes==0.44.1
+accelerate==1.1.1
+datasets==3.1.0
+bandit==1.7.10
+semgrep==1.95.0
