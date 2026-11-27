@@ -196,7 +196,11 @@ def train_reward_model():
         report_to="none",
     )
 
-    trainer = RewardTrainer(
+    class CompatibleRewardTrainer(RewardTrainer):
+        def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
+            return super().compute_loss(model, inputs, return_outputs=return_outputs)
+
+    trainer = CompatibleRewardTrainer(
         model=model,
         args=reward_args,
         tokenizer=tokenizer,

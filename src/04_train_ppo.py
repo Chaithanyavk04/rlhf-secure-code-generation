@@ -20,7 +20,7 @@ PPO_OUTPUT_DIR = os.path.abspath("checkpoints/ppo")
 
 def main():
     with open("data/sft_train.json") as f:
-        train_tasks = json.load(f)
+        train_tasks = json.load(f)[:120]
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
     tokenizer.pad_token = tokenizer.eos_token

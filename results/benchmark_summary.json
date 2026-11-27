@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Base_CodeLlama_7B",
+    "num_tasks": 30,
+    "avg_total_reward": 0.8083,
+    "avg_correctness": 0.72,
+    "avg_security_score": 0.8967,
+    "zero_vulnerability_rate": 0.6
+  },
+  {
+    "model": "SFT_CodeLlama_7B",
+    "num_tasks": 30,
+    "avg_total_reward": 0.7183,
+    "avg_correctness": 0.5067,
+    "avg_security_score": 0.93,
+    "zero_vulnerability_rate": 0.7667
+  },
+  {
+    "model": "PPO_RLHF_CodeLlama_7B",
+    "num_tasks": 30,
+    "avg_total_reward": 0.7633,
+    "avg_correctness": 0.6133,
+    "avg_security_score": 0.9133,
+    "zero_vulnerability_rate": 0.7
+  }
+]
