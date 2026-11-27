@@ -110,3 +110,12 @@ bash setup_env.sh
 
 ```
 
+
+### Interactive Web Interfaces
+```bash
+# Side-by-side Base vs. PPO Security Comparison UI
+/tmp/rlhf_env/bin/python src/web_demo.py
+
+# Multi-turn Chat Assistant UI
+/tmp/rlhf_env/bin/python src/chat_app.py
+```
